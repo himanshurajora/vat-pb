@@ -7,6 +7,7 @@ export const TestComponent = () => {
   const [data, setData] = useState<any>(null);
 
   const fetchData = async () => {
+    pbClient.admins.authViaEmail('himanshujhar@gmail.com', '1234567890');
     const res = await pbClient.records.getList('colleges', 1, 10, {
       expand: 'departments(college),admin',
     });

@@ -1,1 +1,3 @@
-export const SideBar = () => {};
+export const Sidebar = () => {
+  return <></>;
+};
